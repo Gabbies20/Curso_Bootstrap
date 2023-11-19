@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+            <!--Quiero acceder a todos los div que esten dentro de la fila. -->
+    <style>
+        .row > div{
+            background: #caf690;
+            margin: 10px 0;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--container-fluid : lo que me permite es eliminar los espacios a la derecha y a  la izquierda-->
+    <div class="container"><!--Es el contenedor principal en el van todas las filas y columnas.
+    Gracias al comntenedor podremos centrar nuestra página. -->
+
+    <!--Las filas son grupos horizontales de columnas.-->
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis.</p>
+                <button class="btn btn-secondary">Empezar</button>
+            </div>
+            <div class="col-6">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis.</p>
+                <button class="btn btn-secondary">Empezar</button>
+            </div>
+            <div class="col-12">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis.</p>
+                <button class="btn btn-secondary">Empezar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
