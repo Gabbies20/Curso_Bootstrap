@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Columnas anidadas</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Columnas anidadas</title>
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+        .row{
+            background: #e8e8e8;
+        }
+        .columna{
+            background: #f2f2f2;
+            text-align: center;
+            border: 1px solid #8d8d8d;
+        }
+        .columna-interior{
+            background: #e8e8e8;
+            border: 1px solid #8d8d8d;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col">
-                
+            <div class="columna col-12 col-md-6">
+                <!--Dentro de columna 1 voy a crear otras dos columnas.-->
+                Columna#1
+                <div class="row">
+                    <div class="columna-interior col-12 col-md-6">
+                        Hola
+                    </div>
+                    <div class="columna-interior col-12 col-md-6">
+                        Chao
+                    </div>
+                </div>
+            </div>
+            <div class="columna col-12 col-md-6">
+                Columna#2
+                <div class="row">
+                    <div class="columna-interior col-12 col-md-6">
+                        Hola
+                    </div>
+                    <div class="columna-interior col-12 col-md-6">
+                        Chao
+                    </div>
+                </div>
             </div>
         </div>
     </div>
