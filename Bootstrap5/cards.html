@@ -38,6 +38,7 @@
             <div class="col-4">
                 <!--Cambiar tamaño de tarjetas porque se van a adaptar al tamaño del contenedor que tengamos-->
                 <div class="card">
+                    <!--LAS IMAGENES SE AGREGAN FUERA DEL BODY Y LE AÑADIMOS LA class="card-imp-top"-->
                     <img class="card-img-top" src="img/bg.jpg" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Titulo</h5>
@@ -67,7 +68,7 @@
                 <div class="card">
                     <img class="card-img-top" src="img/bg.jpg" alt="">
                     <!--Para eliminar los bordes de las listas lis-group-flush-->
-                    <ul class="list-group-flush">
+                    <ul class="list-group-flush ">
                         <li class="list-group-item">Elemento #1</li>
                         <li class="list-group-item">Elemento #2</li>
                         <li class="list-group-item">Elemento #3</li>
@@ -93,9 +94,11 @@
                 </div>
             </div>
             <div class="col-6">
+                <!--SI NO QUIERES CENTRARLO: elimina text-center-->
                 <div class="card text-center">
                     <div class="card-header">Cita</div>
                     <div class="card-body">
+                        <!--quitar margen: mb-0-->
                         <blockquote class="blockquote">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo molestias voluptatibus iste perspiciatis nostrum?</p>
                             <footer class="blockquote-footer">Lorem, ipsum dolor.</footer>
