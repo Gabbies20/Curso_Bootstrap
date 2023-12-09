@@ -15,31 +15,54 @@
         <!--mt: margin top-->
         <div class="row mt-4">
             <div class="col">
+                <!--DIV CLASS="ACCORDION ACCORDION-FLUSH : le quita el borde."-->
                 <div class="accordion" id="temario">
-                    <!--Elemento nro:1-->
+
+
+                    <!--ELEMENTO nro:1-->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="encabezado-1">
-                            <button class="accordion-button"            type="button"
-                            data-bs-toggle="collapse"
-                                data-bs-target="#elemento-1" aria-expanded="true" aria-controls="elemento-1">Capitulo #1
+                           <!--CONTIENE UN BOTON--> 
+                           <!--Dentro de nuestro boton van todos estos atributos:
+                                    type: le indicamos que es un boton.
+                                    data-bs-toggle="collapse" le indicamos que al presionarlo ejecute un collapse
+                                    data-bs-target = le indicamos el objetivo paar que al presionarlo ejecute algo.
+                                    * Las dos ultimas etiquetas son opcionales, lo que van a permitir, es que en dispositivos para personas con discapacidad estos dispositivos van a poder leer el acordeon y le van a ayudar a la persona a identificar que le pueden dar un clic.
+                -->
+                            <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#elemento-1" 
+                                    aria-expanded="true" 
+                                    aria-controls="elemento-1">
+                                    
+                                    CAPITULO #1
+
                             </button>
                         </h2>
-                        <div id="elemento-1" class="acordion-colapse collapse show" aria-labelledby="encabezado-1"
-                        data-bs-parent="#temario">
+                        <!--ELEMENTO QUE SE VA A MOSTRAR AL HACER CLIC:-->
+                        <div id="elemento-1"    
+                                class="acordion-colapse collapse show" aria-labelledby="encabezado-1"
+                                data-bs-parent="#temario">
+
+                            <!--CONTENIDO INTERIOR DE MI ELEMNTO-->
                             <div class="accordion-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, excepturi atque. Quod
                                     itaque officiis quae perferendis laborum suscipit facere tenetur.</p>
                             </div>
 
                         </div>
+
+
                     </div>
+
 
                     <!--Elemento nro:2-->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="encabezado-2">
                             <button class="accordion-button"            type="button"
                             data-bs-toggle="collapse"
-                                data-bs-target="#elemento-2" aria-expanded="true" aria-controls="elemento-2">Capitulo #2
+                                data-bs-target="#elemento-2" aria-expanded="true" aria-controls="elemento-2">CAPITULO #2
                             </button>
                         </h2>
                         <div id="elemento-2" class="acordion-colapse collapse show" aria-labelledby="encabezado-2"
@@ -57,7 +80,7 @@
                         <h2 class="accordion-header" id="encabezado-3">
                             <button class="accordion-button"            type="button"
                             data-bs-toggle="collapse"
-                                data-bs-target="#elemento-3" aria-expanded="true" aria-controls="elemento-3">Capitulo #3
+                                data-bs-target="#elemento-3" aria-expanded="true" aria-controls="elemento-3">CAPITULO #3
                             </button>
                         </h2>
                         <div id="elemento-3" class="acordion-colapse collapse show" aria-labelledby="encabezado-3"
