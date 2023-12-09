@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ../ para salir de la carpeta actual-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row>div {
+            background-color: #f1efef;
+            margin: 10px 0;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--El container es el contendedor principal, en el iran todas filas y columnas.-->
+    <!--En el container podemos centrar nuestra pagina.-->
+    <div class="container">
+        <!--Las filas (row) son grupos horizontales de columnas.-->
+        
+        <!--
+            Los tamaños de COlumna en bootstrap son 5:
+            .col                     Extra small
+            .col-sm                  Pequeño small
+            .col-md                  Mediano medium
+            .col-lg                  Largo large
+            .col-xl                  Extra largo (Extra large)
+            .cl-xxl                  Extra extra largo (Extra Extra Large)
+        -->
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-12">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste labore odio enim facere itaque
+                    sint. Commodi repellat quos illum, nobis aliquam atque officiis culpa itaque? Libero sed cupiditate
+                    neque.</p>
+                <button class="btn btn-primary">Ver más...</button>
+            </div>
+            <div class="col-12 col-sm-6">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste labore odio enim facere itaque
+                    sint. Commodi repellat quos illum, nobis aliquam atque officiis culpa itaque? Libero sed cupiditate
+                    neque.</p>
+                <button class="btn btn-primary">Ver más...</button>
+            </div>
+            <div class="col-12">
+                <h1>Hola Mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste labore odio enim facere itaque
+                    sint. Commodi repellat quos illum, nobis aliquam atque officiis culpa itaque? Libero sed cupiditate
+                    neque.</p>
+                <button class="btn btn-primary">Ver más...</button>
+            </div>
+        </div>
+        <!--Y dentro de las filas columnas.-->
+
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

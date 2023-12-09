@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Columnas Alineadas Horizontalmente</title>
+    <style>
+        .row {
+            background: #e8e8e8;
+            margin-top: 40px;
+        }
+
+        .columna {
+            background: #f2f2f2;
+            text-align: center;
+            border: 1px solid #4d5861;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Utilizar justify.content-center para centrar columnas-->
+        <div class="row justify-content-start">
+            <!-- div.columna.col-4{Columna $}-->
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-around">
+            <!-- justify-content-around   espacio hacia la izquierda y derecha -->
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-between">
+            <!-- justify-content-between  todo el espacio sobrante ponerlo en medio de los elementos-->
+            <div class="columna col-4">Columna 1</div>
+            SEVILLA
+            <div class="columna col-4">Columna 2</div>
+        </div>
+        <div class="row justify-content-evenly">
+            <!-- justify-content-evenly   divide el espacio de forma equitativa -->
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>
+    </div>
+        <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</body>
+
+</html>

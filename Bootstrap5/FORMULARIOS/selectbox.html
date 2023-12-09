@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <select name="pais" id="pais" class="form-select" aria-label="Seleccion de país">
+                <option value="Mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+
+            <!--Diferentes variantes de SELECT:-->
+            <select name="pais" id="pais" class="form-select form-select-lg" aria-label="Seleccion de país">
+                <option value="Mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+            <select name="pais" id="pais" class="form-select form-select-sm" aria-label="Seleccion de país">
+                <option value="Mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+            <!--SELECT especiales que nos van a permitir seleccionar diferentes elementos al mismo tiempo-->
+            <select multiple size="2" name="pais" id="pais" class="form-select" aria-label="Seleccion de país">
+                <option value="Mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="ecuador">Perú</option>
+            </select>
+
+            <!--Deshabilitar select:-->
+            <select name="pais" id="pais" class="form-select" aria-label="Seleccion de país">
+                <option value="Mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

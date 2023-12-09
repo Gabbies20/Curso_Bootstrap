@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <!--img-fluid: abarca el 100% del espacio disponible -->
+                <img class="img-fluid" src="./img/carousel1.jpg" alt="">
+            </div>
+            <hr>
+            <div class="col-12">
+                <!--img-thumbnail: borde imagen-->
+                <!--img-fluid: que ocupe el 100% de su contenedor.-->
+                <!--float-left: la imagen la puede vandar al inicio o al final de la fila.-->
+                <img class="img-fluid float-start img-thumbnail" width="400" src="./img/bg.jpg" alt="">
+                <img class="img-fluid float-end img-thumbnail" width="400" src="./img/bg2.jpg" alt="">
+            </div>
+
+            <hr>
+        </div>
+        <hr>
+        <div class="row">
+            <!--Añadir imagen donde tengan un pequeño texto o una descripción-->
+            <div class="col-12">
+                <!--Etiqueta figure con su clase figure.-->
+                <figure class="figure">
+                    <!--img-rounded: borde redondo-->
+                    <img class="img-fluid rounded" width="400" src="./img/bg3.jpg" alt="">
+                    <!--Con figcaption vamos a agregar la descripcion de nuestra imagen y su respectiva clase.-->
+                    <figcaption class="figure-caption">
+                        <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
