@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alertas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -12,53 +12,58 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="alert alert-primary mt-3" role="alert">
+                <!--DIV CLASS="ALERT" : con eso ya estamos creando una alerta.
+                role="alert": es importante para dispocitivos y para personas con disccapacidad-->
+                <div class="alert alert-primary mt-3" role="alert"><!--color celeste-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-secondary mt-3" role="alert">
+                <div class="alert alert-secondary mt-3" role="alert"><!--color gris-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-success mt-3" role="alert">
+                <div class="alert alert-success mt-3" role="alert"><!--color verde-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-danger mt-3" role="alert">
+                <div class="alert alert-danger mt-3" role="alert"><!--color rojo-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-warning mt-3" role="alert">
+                <div class="alert alert-warning mt-3" role="alert"><!--color amarillo-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-info mt-3" role="alert">
+                <div class="alert alert-info mt-3" role="alert"><!--color celeste2-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
-                <div class="alert alert-light mt-3" role="alert">
+                <div class="alert alert-light mt-3" role="alert"><!--color blanco-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
-                <div class="alert alert-dark mt-3" role="alert">
+                <div class="alert alert-dark mt-3" role="alert"><!--color oscuro-->
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
                 </div>
 
                 <!---->
                 <hr>
+               <!--ALERTA CON BOTON PARA CERRAR:
+                        show: ME DICE QUE LA ALERTA POR DEFECTO LA VAMOS A MOSTRAR
+                        fade: LE PONEMOS LA ANIMACION DE QUE CUANDO LE DOY UN CLIC SE CIERRE Y DESAPAREZCA CON UNA TRANSICION--> 
                 <div class="alert alert-success mt-3 alert-dismissible fade show" role="alert">
                     <h3>Encabezado</h3>
                     <hr>
                     <p> <strong>Aviso: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque?</p>
                     <a href="#" class="alert-link" >Lorem, ipsum...</a>
-                    <button type="button " class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    <button type="button " class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button><!--ESTE BOTON ME PERMITE PODER CERRAR LA ALERTA-->
                 </div>
             </div>
         </div>
