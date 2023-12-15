@@ -11,12 +11,25 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col">
+                <!--Creamos un boton y al presionar este se abre una ventana emergente-->
+                <!--data-bs-toggle: le indico que me ejecute la ventana modal para q me abra una ventana emergente.
+                data-bs-target: indico el nombre a mi target-->
                 <button 
                     class="btn btn-primary btn-lg"
-                    data-bs-toggle="modal"
-                    data-bs-target="#mi-modal-1">Abrir Modal 1
+                    data-bs-toggle="modal" 
+                    data-bs-target="#mi-modal-1"><!--Le pongo al identificador una almohadilla paar indicar que es un ID-->
+                    
+                    Abrir Modal 1
 
                 </button>
+
+                    <!-- El siguiente div se puede crear en cualquier parte de la pagina
+                    modal fade: para que aparezca con transicion
+                id: el nombre del identificador que pusimos anteriormente.
+                tabindex="-1 :?
+                -->
+
+                <!--Este div contiene el fondo oscuro, dentro de este hay que crear otro div para la caja de dialogo.-->
                 <div 
                 class="modal fade"
                 id="mi-modal-1"
@@ -24,26 +37,30 @@
                 aria-hidden="true"
                 aria-labelledby="label-modal-1"
                 >
-                    <!--Caja de Dialogo-->
+                    <!--DIV PARA: Caja de Dialogo-->
                     <div class="modal-dialog">
+
                         <!--Contenido de la caja de dialogo-->
                         <div class="modal-content">
                             <!--Encabezado de la caja-->
                             <div class="modal-header">
-                                <h5 class="modal-title">Titulo del Modal</h5>
-                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                <h5 class="modal-title">Titulo del Modal</h5><!--Titulo de la ventana-->
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button><!--Boton de cerrar-->
                             </div>
                             <!--Cuerpo de la caja-->
                             <div class="modal-body">
                                 <h5>Hola mundo</h5>
                             </div>
 
-                            <!--Pie de pagina de la caja-->
+                            <!--Pie de pagina de la caja
+                            data-bs-dismiss="modal: es la acción que hace que cierre la ventana modal.s-->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
                                 <button type="button" class="btn btn-primary">Acepto</button>
                             </div>
                         </div>
+
+
                     </div>
 
                 </div>
@@ -65,7 +82,7 @@
                 data-bs-backdrop="static"
                 >
                     <!--Caja de Dialogo-->
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><!--activar el scroll-->
                         <!--Contenido de la caja de dialogo-->
                         <div class="modal-content">
                             <!--Encabezado de la caja-->
@@ -86,6 +103,70 @@
                                 <button type="button" class="btn btn-primary">Acepto</button>
                             </div>
                         </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--MODAL TRES -->
+            <div class="col">
+                <!--Creamos un boton y al presionar este se abre una ventana emergente-->
+                <!--data-bs-toggle: le indico que me ejecute la ventana modal para q me abra una ventana emergente.
+                data-bs-target: indico el nombre a mi target-->
+                <button 
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#mi-modal-3"><!--Le pongo al identificador una almohadilla paar indicar que es un ID-->
+                    
+                    Abrir Modal 3
+
+                </button>
+
+                    <!-- El siguiente div se puede crear en cualquier parte de la pagina
+                    modal fade: para que aparezca con transicion
+                id: el nombre del identificador que pusimos anteriormente.
+                tabindex="-1 :?
+                -->
+
+                <!--Este div contiene el fondo oscuro, dentro de este hay que crear otro div para la caja de dialogo.-->
+                <div 
+                class="modal fade"
+                id="mi-modal-3"
+                tabindex="-1"
+                aria-hidden="true"
+                aria-labelledby="label-modal-1"
+                data-bs-backdrop="static"
+                >
+               <!--Lel ultimo atrinuto data-bs-backdrop="static": me permite que la venta emergente no se cierre al hacer clic fuera--> 
+
+
+
+                    <!--DIV PARA CAJA DE DIALOGO , CENTRO-->
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <!--Contenido de la caja de dialogo-->
+                        <div class="modal-content">
+                            <!--Encabezado de la caja-->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Titulo del Modal</h5><!--Titulo de la ventana-->
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button><!--Boton de cerrar-->
+                            </div>
+                            <!--Cuerpo de la caja-->
+                            <div class="modal-body">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque ad fuga inventore unde in laudantium. Tempore reprehenderit nihil eaque?
+                                </div>
+                            </div>
+
+                            <!--Pie de pagina de la caja
+                            data-bs-dismiss="modal: es la acción que hace que cierre la ventana modal.s-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Acepto</button>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
